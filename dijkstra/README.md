@@ -12,6 +12,8 @@ For a given source node in the graph, the algorithm finds the shortest path betw
 
 ### Java
 
+[![Dijkstra Tests](https://github.com/giovannymassuia/algorithms/actions/workflows/dijkstra-java.yml/badge.svg)](https://github.com/giovannymassuia/algorithms/actions/workflows/dijkstra-java.yml)
+
 #### Pre-requisites
 
 -   Java 21
