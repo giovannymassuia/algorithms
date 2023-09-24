@@ -12,7 +12,7 @@ jobs:
               uses: actions/setup-java@v3
               with:
                   java-version: '21'
-                  distribution: 'adopt'
+                  distribution: 'oracle'
 
             - name: Run All Tests
               working-directory: ./dijkstra/dijkstra-java
