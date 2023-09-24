@@ -26,8 +26,8 @@ For a given source node in the graph, the algorithm finds the shortest path betw
 or
 
 -   Via terminal
--   Go to the project root folder (_with maven and java installed_)
--   Run `mvn test`
+-   Go to the project root folder
+-   Run `./mvnw test`
 
 ## Graphs used in this project
 

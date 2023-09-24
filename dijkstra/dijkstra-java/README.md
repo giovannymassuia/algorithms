@@ -2,15 +2,15 @@
 
 #### Pre-requisites
 
-- Java 21
+-   Java 21
 
 #### How to run tests
 
-- Open the project in your favorite IDE
-- Run the `tests` package
+-   Open the project in your favorite IDE
+-   Run the `tests` package
 
 or
 
-- Via terminal
-- Go to the project root folder (*with maven and java installed*)
-- Run `mvn test`
+-   Via terminal
+-   Go to the project root folder
+-   Run `./mvnw test`
