@@ -18,7 +18,7 @@ public class DijkstraAlgorithmV2 implements DijkstraAlgorithm {
 
         queue.add(Distance.of(0, start, null));
 
-        while (distances.size() < graph.size() && !queue.isEmpty()) {
+        while (!queue.isEmpty()) {
             var current = queue.poll();
 
             if (distances.containsKey(current.key())) continue;
@@ -26,10 +26,11 @@ public class DijkstraAlgorithmV2 implements DijkstraAlgorithm {
             distances.put(current.key(), current);
 
             // early exit
-            if (current.key().equals(end)) return distances;
+//            if (current.key().equals(end)) return distances;
 
-            graph.get(current.key()).edges().forEach(edge ->
-                    queue.add(Distance.of(current.value() + edge.distance(), edge.key(), current.key())));
+            graph.get(current.key()).edges().stream()
+                    .filter(edge -> !distances.containsKey(edge.key()))
+                    .forEach(edge -> queue.add(Distance.of(current.value() + edge.distance(), edge.key(), current.key())));
         }
 
         return distances;
