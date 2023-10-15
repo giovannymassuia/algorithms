@@ -1,9 +1,5 @@
-# Repo with Algorithms and Data Structures
+# Repo with Algorithms
 
-## Algorithms
+This repo is **deprecated**. Please use the new repo:
 
--   [Dijkstra's algorithm](./dijkstra)
-
-## Automated tests
-
-[![Dijkstra Tests](https://github.com/giovannymassuia/algorithms/actions/workflows/dijkstra-java.yml/badge.svg?branch=main)](https://github.com/giovannymassuia/algorithms/actions/workflows/dijkstra-java.yml)
+https://github.com/giovannymassuia/DS-A
